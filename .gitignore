@@ -1,0 +1,14 @@
+MyBook/MyBook.iml
+MyBook/.idea/.gitignore
+MyBook/.idea/misc.xml
+MyBook/.idea/modules.xml
+MyBook/.idea/vcs.xml
+MyBook/out/production/MyBook/Author.class
+MyBook/out/production/MyBook/Book.class
+MyBook/out/production/MyBook/Chapter.class
+MyBook/out/production/MyBook/Image.class
+MyBook/out/production/MyBook/Main.class
+MyBook/out/production/MyBook/Paragraph.class
+MyBook/out/production/MyBook/SubChapter.class
+MyBook/out/production/MyBook/Table.class
+
