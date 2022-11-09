@@ -1,8 +1,11 @@
+import java.awt.*;
 import java.util.concurrent.TimeUnit;
 
-public class Image extends Element{
+public class Picture {
     public String URL;
-    public Image(String s) {
+    public Dimension dim;
+   // public PictureContent content;
+    public Picture(String s) {
 
         this.URL=s;
         try {
@@ -12,23 +15,11 @@ public class Image extends Element{
         }
     }
 
-    @Override
-    public void add(Element element) {
-        //nimic
-    }
-
-    @Override
-    public void get(int id) {
-        //nimic
-    }
-
-    @Override
-    public void remove(Element element) {
-        //nimic
-    }
 
     public void print()
     {
         System.out.println("Image with Image name:"+URL);
     }
 }
+
+
