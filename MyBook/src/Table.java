@@ -1,28 +1,21 @@
-import jdk.jshell.spi.ExecutionControl;
+public class Table implements Element{
+    private String title;
 
-public class Table extends Element {
-    public String something;
-    public Table(String s) {
-        this.something=s;
+    public Table(String title) {
+        this.title = title;
     }
 
-    @Override
-    public void add(Element element) {
-        //nimic
-    }
 
     @Override
-    public void get(int id) {
-        //nimic
+    public void print(){
+        System.out.println("Table with Title: "+title);
     }
 
-    @Override
-    public void remove(Element element) {
-        //nimic
+    public void add(Element e){
     }
-    @Override
-    public void print()
-    {
-        System.out.println(something);
+    public void remove(Element e){
+    }
+    public Element get(int index){
+        return null;
     }
 }

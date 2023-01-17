@@ -1,33 +1,24 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class Book extends  Section{
-    public String title;
-    public Author auth;
-
+public class Book extends Section{
+    private List<Author> authors = new ArrayList<>();
     public Book(String title) {
-        super();
-        this.title=title;
-        this.myList= new ArrayList<Element>();
+        super(title);
+    }
+    public void addContent(Element content){
+        add(content);
     }
 
-    @Override
-    public void print() {
-        System.out.println("Book Title : " +title);
-        System.out.println("By: " +auth.name);
-        System.out.println();
-        for(Element e : myList)
-        {
-            e.print();
+    public void addAuthor(Author author){
+        this.authors.add(author);
+    }
+
+    public void print(){
+        System.out.println("Authors:");
+        for(Author author: authors){
+            author.print();
         }
-    }
-
-    public void addAuthor(Author auth) {
-        this.auth=auth;
-    }
-
-
-    public void addContent(Element e) {
-        this.myList.add(e);
+        super.print();
     }
 }

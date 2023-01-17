@@ -1,34 +1,26 @@
 import java.util.concurrent.TimeUnit;
 
-public class Image extends Element{
-    public String URL;
-    public Image(String s) {
+public class Image implements Element {
+    private final String url;
 
-        this.URL=s;
+    Image(String url) {
+        this.url = url;
         try {
             TimeUnit.SECONDS.sleep(5);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+        String imageContent = null;
     }
-
     @Override
-    public void add(Element element) {
-        //nimic
+    public void print() {
+        System.out.println("Image with name: "+ url);
     }
-
-    @Override
-    public void get(int id) {
-        //nimic
+    public void add(Element e){
     }
-
-    @Override
-    public void remove(Element element) {
-        //nimic
+    public void remove(Element e){
     }
-
-    public void print()
-    {
-        System.out.println("Image with Image name:"+URL);
+    public Element get(int index){
+        return null;
     }
 }

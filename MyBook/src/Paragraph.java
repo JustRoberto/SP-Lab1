@@ -1,26 +1,37 @@
-public class Paragraph extends Element {
-    public String text;
-    public Paragraph(String s) {
-        this.text=s;
+public class Paragraph implements Element {
+    public String name;
+    AlignStrategy x;
+    Paragraph(String name) {
+        this.name=name;
+    }
+
+    public void setAlignStrategy(AlignStrategy strat){
+        this.x=strat;
     }
 
     @Override
-    public void add(Element element) {
-        //nimic
+    public void print(){
+
+        if(x==null) {
+            System.out.println(this.name);
+        }else{
+            x.render(new Paragraph(this.name));
+        }
     }
 
     @Override
-    public void get(int id) {
-        //nimic
+    public void add(Element e) {
+
     }
 
     @Override
-    public void remove(Element element) {
-        //nimic
+    public void remove(Element e) {
+
     }
+
     @Override
-    public void print()
-    {
-        System.out.println("Paragraph :"+text);
+    public Element get(int index) {
+        return null;
     }
 }
+

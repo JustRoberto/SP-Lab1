@@ -1,23 +1,42 @@
 import java.awt.*;
+import java.util.List;
 
-public class ImageProxy extends Element{
-    public String URL;
-    public Dimension dim;
-    public Image loadImage(){
-        Image realImage = null;
-        if (realImage==null)
-        {
-            realImage = new Image(this.URL);
+public class ImageProxy implements Pictures,Element {
+    private String url;
+    private Dimension dim;
+    private Image realImg;
+
+    public void loadImage() {
+        if (realImg == null) {
+            realImg = new Image(url);
         }
-        return realImage;
+//        return realImg;
     }
 
-    public ImageProxy(String URL) {
-        this.URL = URL;
+    ImageProxy(String url) {
+        this.url = url;
     }
 
-    public void print()
-    {
-        System.out.println("Image with Image name:"+URL);
+    public String url() {
+        return url;
+    }
+
+    @Override
+    public void print() {
+        loadImage();
+        realImg.print();
+    }
+
+    @Override
+    public void add(Element e) {
+    }
+
+    @Override
+    public void remove(Element e) {
+    }
+
+    @Override
+    public Element get(int index) {
+        return null;
     }
 }
