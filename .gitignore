@@ -14,3 +14,23 @@ MyBook/out/production/MyBook/Table.class
 
 MyBook/out/production/MyBook/Element.class
 MyBook/out/production/MyBook/Section.class
+SP-Lab1.iml
+.idea/.gitignore
+.idea/misc.xml
+.idea/modules.xml
+.idea/vcs.xml
+.idea/workspace.xml
+test/test.iml
+test/.idea/.gitignore
+test/.idea/misc.xml
+test/.idea/modules.xml
+test/.idea/vcs.xml
+test/out/production/test/Gif.class
+test/out/production/test/Main.class
+test/out/production/test/MediaItem.class
+test/out/production/test/MediaPlayer.class
+test/out/production/test/MediaSizeVisitor.class
+test/out/production/test/Playlist.class
+test/out/production/test/Song.class
+test/out/production/test/Video.class
+test/out/production/test/Visitor.class

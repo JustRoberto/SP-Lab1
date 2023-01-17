@@ -24,7 +24,7 @@ public class MediaSizeVisitor extends Visitor {
     public int visit(Playlist playlist){
         for (MediaItem md:
                 playlist.myList) {
-           // visit(md)
+            visit(md)
 
         }
         return playlist.getSize();
