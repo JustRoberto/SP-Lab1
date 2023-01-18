@@ -3,6 +3,7 @@ import java.util.List;
 
 public class Book extends Section{
     private final List<Author> authors = new ArrayList<>();
+
     public Book(String title) {
 
         super(title);

@@ -5,12 +5,10 @@ public class Table implements Element{
 
         this.title = title;
     }
-
-
     @Override
     public void print(){
 
-        System.out.println("Table with Title: "+title);
+        System.out.println("Labul.Table with Title: "+title);
     }
 
     public void add(Element e){

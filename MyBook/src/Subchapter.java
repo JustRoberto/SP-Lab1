@@ -9,7 +9,7 @@ public class Subchapter {
         this.name = name;
     }
     public void print() {
-        System.out.println("Subchapter: " + name);
+        System.out.println("Labul.Subchapter: " + name);
         for (Element e: elements){
             e.print();
         }

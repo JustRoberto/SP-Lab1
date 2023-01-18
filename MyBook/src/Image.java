@@ -15,7 +15,7 @@ public class Image implements Element {
     @Override
     public void print() {
 
-        System.out.println("Image with name: "+ url);
+        System.out.println("Labul.Image with name: "+ url);
     }
     public void add(Element e){
     }
